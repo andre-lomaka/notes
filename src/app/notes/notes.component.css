@@ -1,6 +1,28 @@
-ul, li {
+.notes {
   list-style: none;
   color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.notes li {
+  background: #ffc;
+  height: 14em;
+  width: 14em;
+  padding: 1em;
+  margin: 1em;
+  cursor: context-menu;
+}
+
+.notes li:hover, .notes li:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+  transform: scale(1.1);
+}
+
+.notes li.selected {
+  background: #444;
+  color: #ffc;
 }
 
 h2 {
@@ -11,23 +33,4 @@ h2 {
 p {
   font-weight: normal;
   font-size: 1rem;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-ul li {
-  background: #ffc;
-  height: 14em;
-  width: 14em;
-  padding: 1em;
-  margin: 1em;
-}
-
-ul li:hover, ul li:focus {
-  box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
-  transform: scale(1.1);
 }

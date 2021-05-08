@@ -1,0 +1,66 @@
+h2 {
+  font-size: 25px;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+input {
+  display: block;
+  height: calc(1.5em + .75rem + 2px);
+  font-size: 1rem;
+  padding: .375rem .75rem;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+}
+
+input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+label {
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+  margin-bottom: .5rem;
+}
+
+button {
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+button:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+button:focus {
+  background-color: #0069d9;
+  box-shadow: 0 0 0 0.2rem rgb(38 143 255 / 50%);
+}
+
+button:active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.pad {
+  padding: 1.5rem;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
