@@ -20,4 +20,8 @@ export class NoteService {
   deleteNote(note: Note): void {
     NOTES.forEach((item, index) => { if (item === note) NOTES.splice(index, 1) });
   }
+
+  addNote(note: Note): void {
+    NOTES.push({title: note.title, text: note.text});
+  }
 }

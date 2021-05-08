@@ -9,7 +9,7 @@
     <input type="text" [(ngModel)]="note.text" style="width: 50%;"/>
   </div>
   <div class="col">
-    <button>Add</button>
-    <button (click)="deleteNote(note)">Delete</button>
+    <button (click)="addNote()">Add</button>
+    <button (click)="deleteNote()" [disabled]="note === new_note">Delete</button>
   </div>
 </div>

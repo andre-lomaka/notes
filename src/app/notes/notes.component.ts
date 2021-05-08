@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Note } from '../note';
+import { NEW_NOTE } from '../new-note';
 import { NoteService } from '../note.service';
 
 @Component({
@@ -17,6 +18,7 @@ export class NotesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getNotes();
+    this.selectedNote = NEW_NOTE;
   }
 
   onSelect(note: Note): void {
