@@ -18,7 +18,7 @@ export class NoteService {
   }
 
   deleteNote(note: Note): void {
-    NOTES.forEach((item, index) => { if (item === note) NOTES.splice(index, 1) });
+    NOTES.some((item, index) => { if (item === note) { NOTES.splice(index, 1); return true; } else return false; });
   }
 
   addNote(note: Note): void {
