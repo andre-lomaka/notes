@@ -1,8 +1,10 @@
-<ul class="notes">
-  <li *ngFor="let note of notes" [class.selected]="note === selectedNote" (click)="onSelect(note)">
-    <h2>{{note.title}}</h2>
-    <p>{{note.text}}</p>
-  </li>
-</ul>
+<div style="width: 70%; float: left;">
+  <ul class="notes">
+    <li *ngFor="let note of notes" [class.selected]="note === selectedNote" (click)="onSelect(note)">
+      <h2>{{note.title}}</h2>
+      <p>{{note.text}}</p>
+    </li>
+  </ul>
+</div>
 
 <app-note-modify [note]="selectedNote"></app-note-modify>

@@ -1,12 +1,12 @@
-<div class="pad" *ngIf="note">
+<div class="pad" *ngIf="note" style="margin-left: 70%; position: fixed;">
   <h2>Modify</h2>
   <div class="col">
     <label>Title</label>
-    <input type="text" [(ngModel)]="note.title" style="width: 30%;"/>
+    <input type="text" [(ngModel)]="note.title" style="width: 100%;"/>
   </div>
   <div class="col">
     <label>Text</label>
-    <input type="text" [(ngModel)]="note.text" style="width: 50%;"/>
+    <input type="text" [(ngModel)]="note.text" style="width: 100%;"/>
   </div>
   <div class="col">
     <button (click)="addNote()">Add</button>
