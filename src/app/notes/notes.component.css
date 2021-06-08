@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
 .notes {
   list-style: none;
   color: black;
@@ -30,7 +34,7 @@ h2 {
   font-size: 2rem;
 }
 
-p {
+pre {
   font-weight: normal;
   font-size: 1rem;
 }

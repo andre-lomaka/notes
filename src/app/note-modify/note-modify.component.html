@@ -6,7 +6,7 @@
   </div>
   <div class="col">
     <label>Text</label>
-    <input type="text" [(ngModel)]="note.text" style="width: 100%;"/>
+    <textarea rows="5" [(ngModel)]="note.text" style="width: 100%;"></textarea>
   </div>
   <div class="col">
     <button (click)="addNote()">Add</button>

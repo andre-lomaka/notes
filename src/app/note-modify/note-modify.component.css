@@ -5,16 +5,23 @@ h2 {
   padding: 10px;
 }
 
-input {
+input, textarea {
   display: block;
-  height: calc(1.5em + .75rem + 2px);
   font-size: 1rem;
   padding: .375rem .75rem;
   background-clip: padding-box;
   border: 1px solid #ced4da;
 }
 
-input:focus {
+input {
+  height: calc(1.5em + .75rem + 2px);
+}
+
+textarea {
+  white-space: pre-wrap;
+}
+
+input:focus, textarea:focus {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);

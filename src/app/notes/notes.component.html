@@ -2,7 +2,7 @@
   <ul class="notes">
     <li *ngFor="let note of notes" [class.selected]="note === selectedNote" (click)="onSelect(note)">
       <h2>{{note.title}}</h2>
-      <p>{{note.text}}</p>
+      <pre>{{note.text}}</pre>
     </li>
   </ul>
 </div>
